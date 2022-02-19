@@ -59,8 +59,8 @@
                     let vm = this;
                     this.getMessages();
                     window.Echo.private("chat." + this.currentRoom.id)
-                    .listen('.message.new', e => {
-                        vm.getMessages();
+                    .listen('NewChatMessage',e=>{
+                    vm.getMessages();
                     }); 
                 }
             },
